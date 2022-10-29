@@ -1,0 +1,188 @@
+body {
+  margin: 0%;
+  padding: 0%;
+}
+
+/* PS2 BODY */
+
+.ps2 {
+  position: absolute;
+  display: flex;
+  bottom: 10px;
+  left: 100px;
+}
+
+.left-body {
+  width: 60px;
+  height: 400px;
+  background-color: #31363e;
+  position: relative;
+}
+
+.right-body {
+  width: 60px;
+  height: 350px;
+  background-color: #474d55;
+  align-self: flex-end;
+  display: flex;
+  border-left: solid 1px rgb(56, 56, 56);
+}
+
+/* LEFT BODY */
+
+/* VERTICAL COLUMNS */
+
+.left-column {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  bottom: 5px;
+}
+
+.big-column {
+  width: 5px;
+  height: 410px;
+  background-color: #434754;
+}
+
+/* SLOTS */
+
+.left-slot {
+  width: 13px;
+  height: 60px;
+  background-color: #272c38;
+  position: relative;
+  border-radius: 15%;
+  box-shadow: inset 0 0 4px black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* CONTROLLER-INPUTS */
+.controller-input1 {
+  bottom: 170px;
+  left: 66%;
+}
+.controller-input2 {
+  bottom: 150px;
+  left: 66%;
+}
+
+/* CONTROLLER-INPUTS-COMPONENTS */
+.controller-component {
+  width: 6px;
+  height: 17px;
+  background-color: grey;
+  border-radius: 20%;
+  margin-top: 1px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin-left: 1px;
+}
+
+.component-hole {
+  width: 2px;
+  height: 2px;
+  background-color: rgb(54, 53, 53);
+  border-radius: 50%;
+  box-shadow: inset 0 0 1px black;
+}
+
+/* MEMORY CARD INPUTS */
+.memoryCard-input1 {
+  bottom: 290px;
+  left: 30%;
+  background-color: #272c3800;
+  box-shadow: inset 0 0 2px black;
+}
+
+.memoryCard-input2 {
+  bottom: 270px;
+  left: 30%;
+  background-color: #272c3800;
+  box-shadow: inset 0 0 2px black;
+}
+
+/* DISK */
+
+.disk {
+  height: 180px;
+  width: 17px;
+  border: 1px solid rgb(43, 42, 42);
+  position: relative;
+  bottom: 620px;
+  left: 20px;
+  box-shadow: inset 0 0 2px rgb(13, 13, 13);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.ps2-logo {
+  width: 15px;
+  transform: rotate(270deg);
+}
+
+/* BUTTONS */
+
+.ps2-button {
+  height: 15px;
+  width: 15px;
+  background-color: #3d4351;
+  position: absolute;
+  box-shadow: 0 0 4px rgb(26, 25, 25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(270deg);
+}
+
+.power {
+  bottom: 375px;
+  left: 6px;
+}
+
+.eject {
+  bottom: 375px;
+  left: 39px;
+}
+
+.power-image {
+  width: 20px;
+  margin-bottom: 0px;
+}
+
+.eject-image {
+  width: 8px;
+  margin-bottom: 0px;
+}
+
+.light {
+  width: 3px;
+  height: 3px;
+  background-color: rgb(117, 114, 114);
+  position: absolute;
+  right: 2px;
+  bottom: 11px;
+  border-radius: 50%;
+}
+
+/* LIGHTS FOR BUTTON ACTIVATION */
+
+.light-power {
+  background-color: green;
+  box-shadow: 0 0 10px 3px green;
+}
+
+.light-eject {
+  background-color: rgb(54, 54, 239);
+  box-shadow: 0 0 10px 3px rgb(54, 54, 239);
+}
+
+/* RIGHT PS2 BODY PART */

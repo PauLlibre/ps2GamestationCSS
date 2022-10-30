@@ -33,6 +33,8 @@ El objetivo de este proyecto es demostrar las posibilidades que ofrece CSS para 
 El proyecto está publicado en GitHub Pages, pero también se puede pullear des de GitHub si así se prefiere.
 Simplemente hacer git pull del proyecto, no hay ninguna dependencia a descargar ni nada por el estilo, debería ser posible lanzar el archivo index.html solo al descargarlo.
 
+Github pages: https://shuii18.github.io/ps2GamestationCSS/
+
 ## 🎈 Usage <a name="usage"></a>
 
 La página se comprende de dos elementos principales, la consola PS2 y un monitor.

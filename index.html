@@ -79,21 +79,21 @@
 
         <!-- PS2 BUTTONS -->
 
-        <div class="ps2-button power">
+        <div onclick="openPs2()" class="ps2-button power">
           <img
             class="power-image"
             src="imgs/power-button.png"
             alt="power button"
           />
-          <div class="light"></div>
+          <div id="onLight" class="light"></div>
         </div>
-        <div class="ps2-button eject">
+        <div onclick="ejectDisk()" class="ps2-button eject">
           <img
             class="eject-image"
             src="imgs/eject-button.png"
             alt="eject button"
           />
-          <div class="light"></div>
+          <div id="ejectLight" class="light"></div>
         </div>
       </div>
 
@@ -143,14 +143,17 @@
     <div class="tv-structure">
       <div class="tv-border">
         <div class="screen-structure">
-          <div class="tv-screen screen-on-noDisplay"></div>
+          <div class="tv-screen" id="tv"></div>
         </div>
         <div class="button-container">
-          <div class="tv-button on-button"></div>
-          <div class="tv-button"></div>
+          <div onclick="tvOn()" class="tv-button on-button"></div>
+          <audio id="staticSound" src="sounds/tv-static.mp3"></audio>
+          <audio id="startupSound" src="sounds/ps2-startup.mp3"></audio>
+          <div onclick="tvOff()" class="tv-button"></div>
           <div class="tv-button"></div>
         </div>
       </div>
     </div>
+    <script src="js/main.js"></script>
   </body>
 </html>

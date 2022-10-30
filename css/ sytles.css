@@ -208,8 +208,8 @@ body {
 }
 
 .light-eject {
-  background-color: rgb(54, 54, 239);
-  box-shadow: 0 0 10px 3px rgb(54, 54, 239);
+  background-color: rgb(85, 189, 221);
+  box-shadow: 0 0 10px 3px rgb(85, 189, 221);
 }
 
 /* RIGHT PS2 BODY PART */
@@ -417,5 +417,10 @@ body {
 
 .screen-on-noDisplay {
   background-image: url(../imgs/tv-old-noDisplay.gif);
+  box-shadow: 0 0 60px 40px white;
+}
+
+.screen-on-display {
+  background-image: url(../imgs/ps2-intro.gif);
   box-shadow: 0 0 60px 40px white;
 }

@@ -24,12 +24,20 @@ body {
   height: 350px;
   background-color: #474d55;
   align-self: flex-end;
-  display: flex;
   border-left: solid 1px rgb(56, 56, 56);
 }
 
 /* LEFT BODY */
 
+/* LOGO */
+
+.logo-image {
+  width: 40px;
+  left: 10px;
+  position: absolute;
+  top: -7px;
+  z-index: 100;
+}
 /* VERTICAL COLUMNS */
 
 .left-column {
@@ -66,9 +74,18 @@ body {
   bottom: 170px;
   left: 66%;
 }
+
+.controller-input1:hover {
+  box-shadow: 0 0 5px 1px yellow;
+}
+
 .controller-input2 {
   bottom: 150px;
   left: 66%;
+}
+
+.controller-input2:hover {
+  box-shadow: 0 0 5px 1px yellow;
 }
 
 /* CONTROLLER-INPUTS-COMPONENTS */
@@ -148,9 +165,17 @@ body {
   left: 6px;
 }
 
+.power:hover {
+  box-shadow: 0 0 5px 1px yellow;
+}
+
 .eject {
   bottom: 375px;
   left: 39px;
+}
+
+.eject:hover {
+  box-shadow: 0 0 5px 1px yellow;
 }
 
 .power-image {
@@ -186,3 +211,125 @@ body {
 }
 
 /* RIGHT PS2 BODY PART */
+
+.ventilation-rows {
+  height: 190px;
+  width: 25px;
+  background-color: #1e2530;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  left: 6px;
+  top: 100px;
+  justify-content: space-around;
+  box-shadow: inset 0 0 2px 2px rgb(24, 24, 24);
+}
+
+.ventilation-row {
+  height: 4px;
+  width: 25px;
+  background-color: #595d64;
+}
+
+.ventilation-columns {
+  height: 190px;
+  width: 25px;
+  background-color: rgba(255, 0, 0, 0);
+  display: flex;
+  position: relative;
+  left: 6px;
+  bottom: 90px;
+  justify-content: space-around;
+}
+
+.ventilation-column {
+  height: 190px;
+  width: 2px;
+  background-color: #50545f;
+}
+
+.usb-container {
+  width: 50px;
+  height: 50px;
+  background-image: rgb(66, 176, 234);
+  background: linear-gradient(
+    270deg,
+    rgba(66, 176, 234, 1) 0%,
+    rgba(55, 120, 186, 1) 52%,
+    rgba(67, 85, 131, 1) 87%
+  );
+  position: relative;
+  bottom: 90px;
+  right: 0px;
+}
+
+.usb-port {
+  height: 20px;
+  width: 9px;
+  background-color: #1e2530;
+  position: relative;
+  top: 25px;
+  border: 1px solid rgb(135, 134, 134);
+  box-shadow: inset 0 0 5px 2px rgb(17, 17, 17);
+}
+
+.port1 {
+  left: 30px;
+}
+
+.port2 {
+  top: 3px;
+  left: 16px;
+}
+
+.usb-component {
+  height: 16px;
+  width: 2px;
+  background-color: #464e59;
+  position: relative;
+  left: 2px;
+  top: 2px;
+}
+
+.port3 {
+  width: 5px;
+  height: 7px;
+  background-color: black;
+  position: absolute;
+  top: 10px;
+  left: 34px;
+  border: 1px solid rgb(135, 134, 134);
+  box-shadow: inset 0 0 5px 2px rgb(17, 17, 17);
+}
+
+/* PS2 SUPPORT */
+
+.support {
+  height: 290px;
+  width: 30px;
+  background-image: linear-gradient(
+    270deg,
+    rgba(66, 176, 234, 1) 0%,
+    rgba(55, 120, 186, 1) 52%,
+    rgba(67, 85, 131, 1) 87%
+  );
+  position: relative;
+  bottom: 430px;
+  left: 30px;
+  z-index: 1;
+}
+
+/* .support-top {
+  width: 0px;
+  height: 0px;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 30px solid rgba(66, 176, 234, 1);
+  position: relative;
+  bottom: 730px;
+  left: 30px;
+}
+
+.bot {
+  bottom: 460px;
+} */

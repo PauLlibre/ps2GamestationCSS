@@ -1,5 +1,6 @@
 // VARIABLES DECLARE
 
+// Guardamos la ruta del elemento para evitar escribir código de más
 let tvScreen = document.getElementById("tv");
 let psOnButton = document.getElementById("onLight");
 let psEjectButton = document.getElementById("ejectLight");

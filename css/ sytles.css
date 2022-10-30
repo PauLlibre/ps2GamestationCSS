@@ -399,12 +399,12 @@ body {
 
 .button-container {
   height: 50px;
-  width: 200px;
+  width: 100px;
   background-color: none;
   position: relative;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   top: 60px;
   left: 50px;
   border-radius: 7%;

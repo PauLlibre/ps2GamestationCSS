@@ -4,14 +4,24 @@ body {
   background-image: url(../imgs/pastel-pink-background.webp);
 }
 
+.display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  flex-wrap: nowrap;
+}
+
 /* PS2 BODY */
 
 .ps2 {
-  position: absolute;
+  position: relative;
   display: flex;
-  bottom: 70px;
-  left: 600px;
+  top: 30px;
+  margin-left: 50px;
   scale: 1.3;
+  box-sizing: border-box;
 }
 
 .left-body {
@@ -25,7 +35,9 @@ body {
   width: 60px;
   height: 350px;
   background-color: #474d55;
-  align-self: flex-end;
+  /* align-self: flex-end; */
+  position: relative;
+  top: 50px;
   border-left: solid 1px rgb(56, 56, 56);
 }
 
@@ -342,13 +354,13 @@ body {
   height: 600px;
   width: 600px;
   background-color: #434754;
-  position: absolute;
-  left: 900px;
-  bottom: 5px;
+  position: relative;
+  margin-left: 50px;
   border-radius: 7%;
   display: flex;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
 }
 
 .tv-border {
@@ -415,6 +427,10 @@ body {
   box-shadow: 0 0 2px 3px black;
 }
 
+.off-button:hover {
+  box-shadow: 0 0 2px 3px black;
+}
+
 .screen-on-noDisplay {
   background-image: url(../imgs/tv-old-noDisplay.gif);
   box-shadow: 0 0 60px 40px white;
@@ -423,4 +439,48 @@ body {
 .screen-on-display {
   background-image: url(../imgs/ps2-intro.gif);
   box-shadow: 0 0 60px 40px white;
+}
+
+/* MEDIUM DISPLAY */
+
+@media (max-width: 860px) {
+  .display {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .ps2 {
+    transform: rotate(90deg);
+    scale: 1;
+    margin-top: 0;
+    margin-left: 0;
+  }
+  .tv-structure {
+    scale: 0.8;
+    order: -1;
+    top: 100px;
+    margin-left: 0;
+  }
+}
+
+/* SMALL DISPLAY */
+
+@media (max-width: 500px) {
+  .display {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .ps2 {
+    transform: rotate(90deg);
+    scale: 0.8;
+    margin-top: 0;
+    margin-left: 0;
+  }
+  .tv-structure {
+    scale: 0.6;
+    top: 250px;
+    order: -1;
+    margin-left: 0;
+  }
 }

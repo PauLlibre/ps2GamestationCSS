@@ -8,149 +8,151 @@
     <title>PS2 GAMESTATION</title>
   </head>
   <body>
-    <!-- PS2 BODY -->
-    <div class="ps2">
-      <!-- LEFT BODY -->
-      <div class="left-body">
-        <!-- SONY LOGO -->
-        <img class="logo-image" src="imgs/sony-logo.png" alt="" />
+    <div class="display">
+      <!-- PS2 BODY -->
+      <div class="ps2">
+        <!-- LEFT BODY -->
+        <div class="left-body">
+          <!-- SONY LOGO -->
+          <img class="logo-image" src="imgs/sony-logo.png" alt="" />
 
-        <div class="left-column">
-          <!-- VERTICAL COLUMNS -->
-          <div class="big-column"></div>
-          <div class="big-column">
-            <div class="big-column-shadow"></div>
+          <div class="left-column">
+            <!-- VERTICAL COLUMNS -->
+            <div class="big-column"></div>
+            <div class="big-column">
+              <div class="big-column-shadow"></div>
+            </div>
+            <div class="big-column"></div>
+            <div class="big-column"></div>
+            <div class="big-column"></div>
+            <div class="big-column"></div>
           </div>
-          <div class="big-column"></div>
-          <div class="big-column"></div>
-          <div class="big-column"></div>
-          <div class="big-column"></div>
+
+          <!-- CONTROLLER PLUGS -->
+
+          <div class="left-slot controller-input1">
+            <!-- CONTROLLER COMPONENTS -->
+
+            <div class="controller-component">
+              <div class="component-hole"></div>
+              <div class="component-hole"></div>
+              <div class="component-hole"></div>
+            </div>
+            <div class="controller-component">
+              <div class="component-hole"></div>
+              <div class="component-hole"></div>
+              <div class="component-hole"></div>
+            </div>
+            <div class="controller-component">
+              <div class="component-hole"></div>
+              <div class="component-hole"></div>
+              <div class="component-hole"></div>
+            </div>
+          </div>
+          <div class="left-slot controller-input2">
+            <div class="controller-component">
+              <div class="component-hole"></div>
+              <div class="component-hole"></div>
+              <div class="component-hole"></div>
+            </div>
+            <div class="controller-component">
+              <div class="component-hole"></div>
+              <div class="component-hole"></div>
+              <div class="component-hole"></div>
+            </div>
+            <div class="controller-component">
+              <div class="component-hole"></div>
+              <div class="component-hole"></div>
+              <div class="component-hole"></div>
+            </div>
+          </div>
+
+          <!-- MEMORY CARDS -->
+
+          <div class="left-slot memoryCard-input1"></div>
+          <div class="left-slot memoryCard-input2"></div>
+
+          <!-- DISK -->
+
+          <div class="disk">
+            <img class="ps2-logo" src="imgs/ps2-logo.png" alt="ps2 logo" />
+          </div>
+
+          <!-- PS2 BUTTONS -->
+
+          <div onclick="openPs2()" class="ps2-button power">
+            <img
+              class="power-image"
+              src="imgs/power-button.png"
+              alt="power button"
+            />
+            <div id="onLight" class="light"></div>
+          </div>
+          <div onclick="ejectDisk()" class="ps2-button eject">
+            <img
+              class="eject-image"
+              src="imgs/eject-button.png"
+              alt="eject button"
+            />
+            <div id="ejectLight" class="light"></div>
+          </div>
         </div>
 
-        <!-- CONTROLLER PLUGS -->
-
-        <div class="left-slot controller-input1">
-          <!-- CONTROLLER COMPONENTS -->
-
-          <div class="controller-component">
-            <div class="component-hole"></div>
-            <div class="component-hole"></div>
-            <div class="component-hole"></div>
+        <!-- RIGHT BODY -->
+        <div class="right-body">
+          <!-- VENTILATION -->
+          <div class="ventilation-rows">
+            <div class="ventilation-row"></div>
+            <div class="ventilation-row"></div>
+            <div class="ventilation-row"></div>
+            <div class="ventilation-row"></div>
+            <div class="ventilation-row"></div>
+            <div class="ventilation-row"></div>
+            <div class="ventilation-row"></div>
+            <div class="ventilation-row"></div>
+            <div class="ventilation-row"></div>
           </div>
-          <div class="controller-component">
-            <div class="component-hole"></div>
-            <div class="component-hole"></div>
-            <div class="component-hole"></div>
+          <div class="ventilation-columns">
+            <div class="ventilation-column"></div>
+            <div class="ventilation-column"></div>
+            <div class="ventilation-column"></div>
+            <div class="ventilation-column"></div>
+            <div class="ventilation-column"></div>
           </div>
-          <div class="controller-component">
-            <div class="component-hole"></div>
-            <div class="component-hole"></div>
-            <div class="component-hole"></div>
+
+          <!-- USB PORTS -->
+          <div class="usb-container">
+            <div class="usb-port port1">
+              <div class="usb-component"></div>
+            </div>
+            <div class="usb-port port2">
+              <div class="usb-component"></div>
+            </div>
+            <div class="port3"></div>
           </div>
-        </div>
-        <div class="left-slot controller-input2">
-          <div class="controller-component">
-            <div class="component-hole"></div>
-            <div class="component-hole"></div>
-            <div class="component-hole"></div>
-          </div>
-          <div class="controller-component">
-            <div class="component-hole"></div>
-            <div class="component-hole"></div>
-            <div class="component-hole"></div>
-          </div>
-          <div class="controller-component">
-            <div class="component-hole"></div>
-            <div class="component-hole"></div>
-            <div class="component-hole"></div>
-          </div>
-        </div>
 
-        <!-- MEMORY CARDS -->
-
-        <div class="left-slot memoryCard-input1"></div>
-        <div class="left-slot memoryCard-input2"></div>
-
-        <!-- DISK -->
-
-        <div class="disk">
-          <img class="ps2-logo" src="imgs/ps2-logo.png" alt="ps2 logo" />
-        </div>
-
-        <!-- PS2 BUTTONS -->
-
-        <div onclick="openPs2()" class="ps2-button power">
-          <img
-            class="power-image"
-            src="imgs/power-button.png"
-            alt="power button"
-          />
-          <div id="onLight" class="light"></div>
-        </div>
-        <div onclick="ejectDisk()" class="ps2-button eject">
-          <img
-            class="eject-image"
-            src="imgs/eject-button.png"
-            alt="eject button"
-          />
-          <div id="ejectLight" class="light"></div>
+          <!-- PS2 SUPPORT -->
+          <div class="support"></div>
+          <div class="support-top"></div>
+          <div class="support-top bot"></div>
         </div>
       </div>
 
-      <!-- RIGHT BODY -->
-      <div class="right-body">
-        <!-- VENTILATION -->
-        <div class="ventilation-rows">
-          <div class="ventilation-row"></div>
-          <div class="ventilation-row"></div>
-          <div class="ventilation-row"></div>
-          <div class="ventilation-row"></div>
-          <div class="ventilation-row"></div>
-          <div class="ventilation-row"></div>
-          <div class="ventilation-row"></div>
-          <div class="ventilation-row"></div>
-          <div class="ventilation-row"></div>
-        </div>
-        <div class="ventilation-columns">
-          <div class="ventilation-column"></div>
-          <div class="ventilation-column"></div>
-          <div class="ventilation-column"></div>
-          <div class="ventilation-column"></div>
-          <div class="ventilation-column"></div>
-        </div>
+      <!-- TV -->
 
-        <!-- USB PORTS -->
-        <div class="usb-container">
-          <div class="usb-port port1">
-            <div class="usb-component"></div>
+      <!-- TVBOX -->
+      <div class="tv-structure">
+        <div class="tv-border">
+          <div class="screen-structure">
+            <div class="tv-screen" id="tv"></div>
           </div>
-          <div class="usb-port port2">
-            <div class="usb-component"></div>
+          <div class="button-container">
+            <div onclick="tvOn()" class="tv-button on-button"></div>
+            <audio id="staticSound" src="sounds/tv-static.mp3"></audio>
+            <audio id="startupSound" src="sounds/ps2-startup.mp3"></audio>
+            <div onclick="tvOff()" class="tv-button off-button"></div>
+            <div class="tv-button"></div>
           </div>
-          <div class="port3"></div>
-        </div>
-
-        <!-- PS2 SUPPORT -->
-        <div class="support"></div>
-        <div class="support-top"></div>
-        <div class="support-top bot"></div>
-      </div>
-    </div>
-
-    <!-- TV -->
-
-    <!-- TVBOX -->
-    <div class="tv-structure">
-      <div class="tv-border">
-        <div class="screen-structure">
-          <div class="tv-screen" id="tv"></div>
-        </div>
-        <div class="button-container">
-          <div onclick="tvOn()" class="tv-button on-button"></div>
-          <audio id="staticSound" src="sounds/tv-static.mp3"></audio>
-          <audio id="startupSound" src="sounds/ps2-startup.mp3"></audio>
-          <div onclick="tvOff()" class="tv-button"></div>
-          <div class="tv-button"></div>
         </div>
       </div>
     </div>

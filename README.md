@@ -26,7 +26,7 @@
 
 ## 🧐 About <a name = "about"></a>
 
-This project is a recreation of a PS2 console using only HTML and CSS, with the help of JavaScript to give simple functionalities to some of the buttons. The goal of this project is to demonstrate the possibilities offered by CSS for designing objects and pages, using different positioning, flex, etc. tools.
+This project is a recreation of a PS2 console using only HTML and CSS, with the help of JavaScript to give simple functionalities to some of the buttons. The goal of this project is to demonstrate the possibilities offered by CSS for designing objects and pages, using different positioning, flex, etc. 
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
 

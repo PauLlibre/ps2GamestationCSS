@@ -16,55 +16,54 @@
 
 ---
 
-## 📝 TABLA DE CONTENIDOS
+## 📝 Table of Contents
 
 - [About](#about)
+- [Getting Started](#getting_started)
 - [Usage](#usage)
 - [Built Using](#built_using)
 - [Authors](#authors)
 
 ## 🧐 About <a name = "about"></a>
 
-Recreación de una consola PS2 utilizando solamente codigo HTML y CSS, usando también JS para dar funcionalidades simples a algunos de los botones.
-El objetivo de este proyecto es demostrar las posibilidades que ofrece CSS para el diseño de objetos y páginas, usando distintas herramientas de posicionamiento, flex etc...
+This project is a recreation of a PS2 console using only HTML and CSS, with the help of JavaScript to give simple functionalities to some of the buttons. The goal of this project is to demonstrate the possibilities offered by CSS for designing objects and pages, using different positioning, flex, etc. tools.
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
 
-El proyecto está publicado en GitHub Pages, pero también se puede pullear des de GitHub si así se prefiere.
-Simplemente hacer git pull del proyecto, no hay ninguna dependencia a descargar ni nada por el estilo, debería ser posible lanzar el archivo index.html solo al descargarlo.
+The project is published on GitHub Pages, but you can also pull it from GitHub if you prefer. Simply run a `git pull` on the project, there are no dependencies to download or anything like that, you should be able to launch the `index.html` file just by downloading it.
 
 Github pages: https://shuii18.github.io/ps2GamestationCSS/
 
 ## 🎈 Usage <a name="usage"></a>
 
-La página se comprende de dos elementos principales, la consola PS2 y un monitor.
+The page consists of two main elements, the PS2 console and a monitor.
 
-### Consola ps2
+### PS2 Console
 
-La consola cuenta con dos botones en la parte superior uno de encendido y otro de eject.
+The console has two buttons on the top, one for power and the other for eject.
 
-- El botón de encendido encenderá la consola pero no se podrá hacer nada a no ser que se encienda también el monitor.
-- El botón de eject es el que en la consola original tenía la funcionalidad de abrir el compartimento de CD para poner el juego deseado, en nuestro caso pulsarlo simplemente hará que su luz parpadee una vez en azul y se apague.
-- También encontramos los inputs para los dos controles que simplemente activan la funcion hover como si hicieran algo pero su funcionalidad todavia no ha sido añadida.
+- The power button will turn on the console, but nothing can be done unless the monitor is also turned on.
+- The eject button has the functionality of opening the CD compartment to put the desired game in the original console, in our case pressing it will simply make its light blink once in blue and then turn off.
+- We also find the inputs for the two controllers, which simply activate the hover function as if they were doing something, but their functionality has not been added yet.
 
 ### Monitor
 
-El monitor consta de una pantalla y dos botones en la parte inferior, uno de encendido y el otro de apagado.
-Simplemente encienden y apagan el monitor.
+The monitor consists of a screen and two buttons at the bottom, one for power and the other for off.
+They simply turn the monitor on and off.
 
-### Funcionalidad
+### Functionality
 
-La pagina tiene distintas funciones dependiendo de la combinación de botones que estén activos:
+The page has different functions depending on the combination of active buttons:
 
-- Si el boton de encendido de la ps2 está encendido y el monitor también podremos ver la animación de incio de la ps2 con su sonido.
-- Si el boton de encendido de la ps2 está apagado y el monitor está encendido veremos la pantalla encendida sin señal y también oiremos el sonido habitual de los monitores antiguos al no tener señal.
+- If the power button of the PS2 is turned on and the monitor is also turned on, we will be able to see the PS2 start-up animation with its sound.
+- If the PS2 power button is off and the monitor is turned on, we will see the screen on without a signal and we will also hear the sound of old monitors when there is no signal.
 
 ## ⛏️ Built Using <a name = "built_using"></a>
 
-- [HTML](https://developer.mozilla.org/es/docs/Web/HTML) - Estructura
-- [CSS](https://developer.mozilla.org/es/docs/Web/CSS) - Diseño
-- [JavaScript](https://www.javascript.com) - Funcionalidad
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) - Structure
+- [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) - Design
+- [JavaScript](https://www.javascript.com) - Functionality
 
 ## ✍️ Authors <a name = "authors"></a>
 
-- [@shuii18](https://github.com/shuii18) - Idea & Desarrollo
+- [@shuii18](https://github.com/shuii18) - Idea & Development
